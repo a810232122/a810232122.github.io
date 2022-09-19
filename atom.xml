@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-09-19T11:03:08.199Z</updated>
+  <updated>2022-09-19T12:16:05.818Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>github配置ssh时的坑</title>
+    <link href="http://example.com/2022/09/19/github/"/>
+    <id>http://example.com/2022/09/19/github/</id>
+    <published>2022-09-19T12:06:31.000Z</published>
+    <updated>2022-09-19T12:16:05.818Z</updated>
+    
+    <content type="html"><![CDATA[<p>在配置GitHub中ssh连接方式时，尝试了多次发现以前的套路已经无法达到目标了。经过不懈的努力终于发现了其中问题，现在跟大家一起分享下吧。</p><p>首先生成ssh公私钥的时候，要使用最新的生成命令</p><p><code>ssh-keygen -t rsa -b 4096 -C &quot;your email adress&quot;</code></p><p>接下来就是重点，经过多次尝试发现需要将公私钥命名为<code>github_id_rsa</code>后保存，将其中公钥中的内容复制粘贴到Github中的SSH keys中，并保存。要是名称建议填写绑定电脑的名称，这样以后好区分。</p><p>然后通过 </p><p><code>ssh -T git@github.com</code></p><p>即可测试ssh通道是否可达。</p><p>完美解决。nice！</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;在配置GitHub中ssh连接方式时，尝试了多次发现以前的套路已经无法达到目标了。经过不懈的努力终于发现了其中问题，现在跟大家一起分享下吧。&lt;/p&gt;
+&lt;p&gt;首先生成ssh公私钥的时候，要使用最新的生成命令&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;ssh-keygen -t rsa -b </summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>iOS 16适配指南</title>
