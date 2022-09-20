@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Hexo</title>
+  <title>技术成长历程</title>
   
   
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-09-19T12:16:05.818Z</updated>
+  <updated>2022-09-20T06:58:44.417Z</updated>
   <id>http://example.com/</id>
   
   <author>
-    <name>John Doe</name>
+    <name>杨宏波</name>
     
   </author>
   
@@ -21,7 +21,7 @@
     <link href="http://example.com/2022/09/19/github/"/>
     <id>http://example.com/2022/09/19/github/</id>
     <published>2022-09-19T12:06:31.000Z</published>
-    <updated>2022-09-19T12:16:05.818Z</updated>
+    <updated>2022-09-20T06:58:44.417Z</updated>
     
     <content type="html"><![CDATA[<p>在配置GitHub中ssh连接方式时，尝试了多次发现以前的套路已经无法达到目标了。经过不懈的努力终于发现了其中问题，现在跟大家一起分享下吧。</p><p>首先生成ssh公私钥的时候，要使用最新的生成命令</p><p><code>ssh-keygen -t rsa -b 4096 -C &quot;your email adress&quot;</code></p><p>接下来就是重点，经过多次尝试发现需要将公私钥命名为<code>github_id_rsa</code>后保存，将其中公钥中的内容复制粘贴到Github中的SSH keys中，并保存。要是名称建议填写绑定电脑的名称，这样以后好区分。</p><p>然后通过 </p><p><code>ssh -T git@github.com</code></p><p>即可测试ssh通道是否可达。</p><p>完美解决。nice！</p>]]></content>
     
@@ -35,6 +35,8 @@
     
     
     
+    <category term="开发" scheme="http://example.com/categories/%E5%BC%80%E5%8F%91/"/>
+    
     
   </entry>
   
@@ -43,7 +45,7 @@
     <link href="http://example.com/2022/09/19/Adaptation/"/>
     <id>http://example.com/2022/09/19/Adaptation/</id>
     <published>2022-09-19T09:16:18.000Z</published>
-    <updated>2022-09-19T11:03:08.199Z</updated>
+    <updated>2022-09-20T06:57:59.173Z</updated>
     
     <content type="html"><![CDATA[<p>2022年9月12号推送的iOS16已经过去一段时间了，回头看下iOS16需要适配的api还是蛮多的，小伙伴们一起看下需要review的代码吧</p><h3 id="新增控件"><a href="#新增控件" class="headerlink" title="新增控件"></a>新增控件</h3><ul><li><p><code>UICalendarView</code>，显示日期支持单选与多选</p></li><li><p><code>UIEditMenuInteraction</code>，取代 <code>UIMenuController</code>、<code>UIMenuItem</code></p></li><li><p><code>UIFindInteraction</code> 文本内容查找与替换</p></li><li><p><code>UIPasteControl</code> 读取剪贴板中的内容，跨 App 读取需要授权弹框</p></li><li><p><code>UIImage</code> 新增的构造函数，支持 SF Symbols 新增的类别 Variable</p></li><li><p><code>LARightStore</code> 存储、获取 <code>keychain</code> 数据</p></li></ul><h3 id="代码修改"><a href="#代码修改" class="headerlink" title="代码修改"></a>代码修改</h3><ul><li><p><code>UIScreen.main</code>将会废弃，建议使用<code>(UIApplication.shared.connectedScenes.first as? UIWindowScene)?.screen</code></p></li><li><p>支持 <code>setValue()</code> 方法设置设备的方向，替换为 UIWindowScene 的 <code>requestGeometryUpdate()</code> 方法。</p></li><li><p><code>UISheetPresentationController</code> 支持自定义显示的 <code>UIViewController </code>的大小。</p></li><li><p>UINavigationItem 改动</p><ul><li>新增属性 <code>style</code> 描述 <code>UINavigationItem</code> 在 <code>UINa vigationBar</code>上的布局</li><li>新增属性 <code>backAction</code> 用于自定义 <code>UIViewController</code> 返回<code>button</code>事件</li><li>新增属性 <code>titleMenuProvider</code> 用于给当前导航栏的标题添加操作菜单</li></ul></li><li><p><code>UIPageControl </code>支持垂直显示、设置指示器、设置当前页图片。</p></li><li><p><code>UITableView</code>、<code>UICollectionView</code> 使用 Cell Content Configuration 时支持使用 <code>UIHostingConfiguration</code> 包装 SwiftUI 代码定义 Cell 的内容。</p></li><li><p><code>UITableView</code>、<code>UICollectionView</code> 新增 <code>selfSizingInvalidation</code> 参数，使Cell可以自动调整大小</p></li><li><p><code>UIMenu</code> 支持尺寸 <code>small</code> 、 <code>medium</code> 、 <code>large</code></p></li><li><p><code>UIDevice</code> 获取设备信息时，只能获取设备的名称，隐私权限增强</p></li><li><p><code>WidgetFamily</code> 新增分类 <code>accessory</code> ，支持 iOS 锁屏显示和 watchOS 表盘显示</p></li></ul><h3 id="调试相关"><a href="#调试相关" class="headerlink" title="调试相关"></a>调试相关</h3><ul><li>iOS 16 真机调试开启，开启路径：设置-隐私与安全-开发者模式</li></ul>]]></content>
     
@@ -55,6 +57,8 @@
       
     
     
+    
+    <category term="iOS" scheme="http://example.com/categories/iOS/"/>
     
     
   </entry>
