@@ -1,7 +1,7 @@
+http://example.com/about/index.html
 http://example.com/categories/index.html
 http://example.com/2022/09/19/github/
 http://example.com/2022/09/19/Adaptation/
-http://example.com/about/index.html
 http://example.com/
 http://example.com/categories/iOS/
 http://example.com/categories/%E5%BC%80%E5%8F%91/
