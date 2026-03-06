@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>杨宏波 - 前端开发工程师简历</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        @page { size: A4; margin: 0; }
+
+        body {
+            font-family: "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+            font-size: 13px;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+        }
+
+        .page {
+            width: 210mm;
+            min-height: 297mm;
+            margin: 0 auto 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        /* 头部 */
+        .header {
+            background: linear-gradient(135deg, #1a5276 0%, #2980b9 100%);
+            color: #fff;
+            padding: 35px 40px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 32px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            letter-spacing: 3px;
+        }
+
+        .job-title {
+            font-size: 16px;
+            opacity: 0.9;
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            font-size: 12px;
+        }
+
+        .contact-info span {
+            background: rgba(255,255,255,0.15);
+            padding: 5px 12px;
+            border-radius: 15px;
+        }
+
+        /* 内容 */
+        .content { padding: 30px 35px; }
+
+        .section { margin-bottom: 22px; }
+
+        .section-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: #1a5276;
+            padding-bottom: 6px;
+            border-bottom: 2px solid #1a5276;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+        }
+
+        .section-title::before {
+            content: "";
+            display: inline-block;
+            width: 4px;
+            height: 16px;
+            background: #1a5276;
+            margin-right: 8px;
+            border-radius: 2px;
+        }
+
+        /* 技能 */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 8px;
+        }
+
+        .skill-item {
+            background: #f8f9fa;
+            padding: 6px 10px;
+            border-radius: 4px;
+            border-left: 3px solid #2980b9;
+            font-size: 11px;
+        }
+
+        /* 经历项目 */
+        .experience-item, .project-item {
+            margin-bottom: 14px;
+            padding-bottom: 14px;
+            border-bottom: 1px dashed #e0e0e0;
+        }
+
+        .experience-item:last-child, .project-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 6px;
+        }
+
+        .item-title {
+            font-size: 14px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .item-subtitle {
+            font-size: 12px;
+            color: #666;
+            margin-top: 2px;
+        }
+
+        .item-date {
+            font-size: 11px;
+            color: #888;
+            white-space: nowrap;
+            background: #f0f0f0;
+            padding: 3px 8px;
+            border-radius: 10px;
+        }
+
+        .item-desc {
+            font-size: 12px;
+            color: #555;
+            line-height: 1.7;
+            margin-top: 6px;
+        }
+
+        .highlight-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            margin-top: 6px;
+        }
+
+        .highlight-tag {
+            font-size: 11px;
+            color: #2980b9;
+            background: rgba(41, 128, 185, 0.1);
+            padding: 2px 8px;
+            border-radius: 3px;
+        }
+
+        .tech-stack {
+            margin-top: 6px;
+            font-size: 11px;
+            color: #888;
+        }
+
+        .tech-stack strong {
+            color: #666;
+        }
+
+        /* 页脚 */
+        .footer {
+            text-align: center;
+            padding: 15px;
+            font-size: 11px;
+            color: #999;
+            background: #f8f9fa;
+        }
+
+        @media print {
+            body { background: #fff; }
+            .page { box-shadow: none; margin: 0; page-break-after: always; }
+            .page:last-child { page-break-after: avoid; }
+        }
+    </style>
+</head>
+<body>
+    <!-- 第1页 -->
+    <div class="page">
+        <!-- 头部 -->
+        <div class="header">
+            <h1>杨宏波</h1>
+            <div class="job-title">前端开发工程师 | 9年+经验</div>
+            <div class="contact-info">
+                <span>📱 137-5816-0165</span>
+                <span>📧 a810232122@163.com</span>
+                <span>🎂 1992年6月</span>
+                <span>🎓 中原工学院 - 通信工程</span>
+            </div>
+        </div>
+
+        <!-- 内容 -->
+        <div class="content">
+            <!-- 个人简介 -->
+            <div class="section">
+                <div class="section-title">个人简介</div>
+                <p class="item-desc" style="margin-top: 0;">
+                    9年前端开发经验，拥有丰富的金融行业项目开发经验。擅长Vue生态开发，熟悉mPaaS移动开发平台，具备丰富的前端架构设计和性能优化经验。具有良好的项目管理能力，曾作为前端负责人带领团队完成多个银行级项目。热爱技术，持续关注前端新技术发展，具备优秀的问题解决能力和团队协作能力。
+                </p>
+            </div>
+
+            <!-- 核心技能 -->
+            <div class="section">
+                <div class="section-title">核心技能</div>
+                <div class="skills-grid">
+                    <div class="skill-item"><span class="skill-name">Vue 2/3 全家桶</span></div>
+                    <div class="skill-item"><span class="skill-name">Webpack/Vite</span></div>
+                    <div class="skill-item"><span class="skill-name">mPaaS</span></div>
+                    <div class="skill-item"><span class="skill-name">H5/CSS3/ES6+</span></div>
+                    <div class="skill-item"><span class="skill-name">ElementUI/Vux</span></div>
+                    <div class="skill-item"><span class="skill-name">Scss/Less</span></div>
+                    <div class="skill-item"><span class="skill-name">Axios</span></div>
+                    <div class="skill-item"><span class="skill-name">Git/SVN</span></div>
+                    <div class="skill-item"><span class="skill-name">移动端适配</span></div>
+                    <div class="skill-item"><span class="skill-name">组件化开发</span></div>
+                    <div class="skill-item"><span class="skill-name">前端工程化</span></div>
+                </div>
+            </div>
+
+            <!-- 工作经历 -->
+            <div class="section">
+                <div class="section-title">工作经历</div>
+
+                <!-- 公司1 -->
+                <div class="experience-item">
+                    <div class="item-header">
+                        <div class="item-title-group">
+                            <div class="item-title">前端开发工程师</div>
+                            <div class="item-subtitle">浙江大华股份有限公司</div>
+                        </div>
+                        <div class="item-date">2020.03 - 2022.08</div>
+                    </div>
+                    <p class="item-desc">
+                        负责应急指挥类App的前端开发工作，作为项目负责人独立开发项目，对接音视频相关API，完成视频播放、资源调度、地图交互等核心功能模块。
+                    </p>
+                    <div class="highlight-list">
+                        <span class="highlight-tag">Vue 2.x</span>
+                        <span class="highlight-tag">mPaaS</span>
+                        <span class="highlight-tag">音视频开发</span>
+                        <span class="highlight-tag">地图集成</span>
+                        <span class="highlight-tag">独立负责</span>
+                    </div>
+                </div>
+
+                <!-- 公司2 -->
+                <div class="experience-item">
+                    <div class="item-header">
+                        <div class="item-title-group">
+                            <div class="item-title">前端开发工程师</div>
+                            <div class="item-subtitle">北京易诚互动网络技术有限公司</div>
+                        </div>
+                        <div class="item-date">2017.09 - 2020.09</div>
+                    </div>
+                    <p class="item-desc">
+                        作为前端负责人，带领团队完成稠州商业银行手机银行App和直销银行App的开发。负责项目排期、进度跟进、公共组件封装、原生API对接等工作，项目架构支持PC端调试。
+                    </p>
+                    <div class="highlight-list">
+                        <span class="highlight-tag">前端负责人</span>
+                        <span class="highlight-tag">Vue</span>
+                        <span class="highlight-tag">mPaaS</span>
+                        <span class="highlight-tag">Webpack</span>
+                        <span class="highlight-tag">组件封装</span>
+                        <span class="highlight-tag">跨平台</span>
+                    </div>
+                </div>
+
+                <!-- 公司3 -->
+                <div class="experience-item">
+                    <div class="item-header">
+                        <div class="item-title-group">
+                            <div class="item-title">iOS开发工程师</div>
+                            <div class="item-subtitle">杭州麦子金融信息服务有限公司</div>
+                        </div>
+                        <div class="item-date">2015.09 - 2017.09</div>
+                    </div>
+                    <p class="item-desc">
+                        从事iOS移动端开发工作，积累了扎实的移动端开发经验，为后续转向前端开发奠定了良好的技术基础。
+                    </p>
+                    <div class="highlight-list">
+                        <span class="highlight-tag">iOS开发</span>
+                        <span class="highlight-tag">移动端基础</span>
+                        <span class="highlight-tag">技术转型</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 第2页 -->
+    <div class="page">
+        <div class="content" style="padding-top: 35px;">
+            <!-- 项目经历 -->
+            <div class="section">
+                <div class="section-title">项目经历</div>
+
+                <!-- 项目1 -->
+                <div class="project-item">
+                    <div class="item-header">
+                        <div class="item-title-group">
+                            <div class="item-title">稠州商业银行手机银行App</div>
+                            <div class="item-subtitle">前端负责人</div>
+                        </div>
+                        <div class="item-date">2018 - 2020</div>
+                    </div>
+
+                    <p class="item-desc">
+                        手机银行App为用户提供各种线上银行服务，包含手机银行和村镇银行功能。项目沿用直销银行架构进行开发，在此基础上优化支持PC端调试，用前端技术替代部分原生API，提升开发效率。
+                    </p>
+
+                    <div class="tech-stack"><strong>技术栈:</strong> mPaaS、Webpack、Vue 2.x、Vux、Scss、Axios</div>
+
+                    <div class="highlight-list">
+                        <span class="highlight-tag">前端负责人</span>
+                        <span class="highlight-tag">项目排期</span>
+                        <span class="highlight-tag">组件封装</span>
+                        <span class="highlight-tag">原生API对接</span>
+                        <span class="highlight-tag">跨平台适配</span>
+                    </div>
+                </div>
+
+                <!-- 项目2 -->
+                <div class="project-item">
+                    <div class="item-header">
+                        <div class="item-title-group">
+                            <div class="item-title">稠银直销App</div>
+                            <div class="item-subtitle">前端开发工程师 → 前端负责人</div>
+                        </div>
+                        <div class="item-date">2017 - 2018</div>
+                    </div>
+
+                    <p class="item-desc">
+                        稠银直销繁荣投资贷款平台，为客户提供银行金融服务，包括理财、基金、贷款等产品。这是我作为前端负责人参与的第一个正式项目，在项目中承担了公共组件开发、原生API封装、多个核心业务模块开发等工作。
+                    </p>
+
+                    <div class="tech-stack"><strong>技术栈:</strong> mPaaS、Webpack、Vue 2.x、Vux、Scss</div>
+
+                    <div class="highlight-list">
+                        <span class="highlight-tag">公共组件开发</span>
+                        <span class="highlight-tag">安全键盘组件</span>
+                        <span class="highlight-tag">原生API对接</span>
+                        <span class="highlight-tag">电子账户系统</span>
+                        <span class="highlight-tag">贷款系统</span>
+                    </div>
+                </div>
+
+                <!-- 项目3 -->
+                <div class="project-item">
+                    <div class="item-header">
+                        <div class="item-title-group">
+                            <div class="item-title">应急指挥App</div>
+                            <div class="item-subtitle">项目负责人 | 独立开发</div>
+                        </div>
+                        <div class="item-date">2020 - 2022</div>
+                    </div>
+
+                    <p class="item-desc">
+                        应急业务补充的移动App，为客户提供方便的查看信息及简单的业务交互，包括发布任务、处理应急事件、查看摄像头视频和回放视频等功能。作为项目负责人独立完成整个项目的前端开发工作。
+                    </p>
+
+                    <div class="tech-stack"><strong>技术栈:</strong> Webpack、Vue 2.x、Vux、Scss、Axios、vue-video-player</div>
+
+                    <div class="highlight-list">
+                        <span class="highlight-tag">项目负责人</span>
+                        <span class="highlight-tag">音视频播放</span>
+                        <span class="highlight-tag">任务调度</span>
+                        <span class="highlight-tag">地图集成</span>
+                        <span class="highlight-tag">通讯录</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            感谢您阅读我的简历，期待与您进一步沟通！
+        </div>
+    </div>
+</body>
+</html>
